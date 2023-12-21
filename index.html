@@ -7,28 +7,28 @@
   </head>
   <body>
     <div id="swagger-ui"></div>
-    <script defer>
-      window.onload = function () {
-        const ui = SwaggerUIBundle({
-          urls: [
-            {
-              name: "TMF622-ProductOrder-v4.0.0",
-              url: "TMF622-ProductOrder-v4.0.0.swagger.json",
-            },
-            {
-              name: "Product_Ordering_Management.regular",
-              url: "Product_Ordering_Management.regular.swagger.json",
-            },
-          ],
-          dom_id: "#swagger-ui",
-          deepLinking: true,
-          presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
-          plugins: [SwaggerUIBundle.plugins.DownloadUrl],
-          layout: "StandaloneLayout",
-        });
-        window.ui = ui;
-      };
-    </script>
+  <script defer>
+  window.onload = function () {
+    const ui = SwaggerUIBundle({
+      urls: [
+        {
+          name: "TMF622-ProductOrder-v4.0.0",
+          url: "TMF622-ProductOrder-v4.0.0.swagger.json",
+        },
+        {
+          name: "Product_Ordering_Management.regular",
+          url: "Product_Ordering_Management.regular.swagger.json",
+        },
+      ],
+      dom_id: "#swagger-ui",
+      deepLinking: true,
+      presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
+      plugins: [SwaggerUIBundle.plugins.DownloadUrl],
+      layout: "StandaloneLayout",
+    });
+    window.ui = ui;
+  };
+</script>
     <style>
       .swagger-ui .topbar .download-url-wrapper input[type="text"] {
         border: 2px solid #77889a;
