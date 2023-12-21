@@ -1,0 +1,12 @@
+const ui = SwaggerUIBundle({
+    url: "./swagger.json",  // Use a relative path
+    dom_id: '#swagger-ui',
+    deepLinking: true,
+    presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIBundle.SwaggerUIStandalonePreset
+    ],
+    plugins: [
+        SwaggerUIBundle.plugins.DownloadUrl
+    ],
+})
